@@ -1,3 +1,17 @@
+A Note From the Curator
+-----------------------
+July 1, 2020
+
+This repository of UNIX Moria is based on version 4.8.7 of umoria. I've made
+the bare minimum of changes required to allow this archive to build on
+GNU/Linux systems circa 2020 - everything else is untouched.
+
+Builds require a curses library such as libncurses5-dev
+
+To build, run
+$ make
+-----------------------
+
 
 This copy of umoria includes the first three patch files (upto u487.p3).
 

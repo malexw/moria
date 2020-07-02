@@ -29,7 +29,7 @@ int error_sig, error_code;
 /* on some systems, signal and suspend_handler must be declared as 'void'
    instead of 'int', this varies even among different OS releases, so there
    is no good way to solve the problem with ifdefs */
-int (*signal())();
+/* int (*signal())(); */
 int signal_save_core();
 int signal_save_no_core();
 int signal_ask_quit();
@@ -52,7 +52,7 @@ init_signals()
   (void) signal(SIGILL, signal_save_core);
   (void) signal(SIGTRAP, signal_save_core);
   (void) signal(SIGIOT, signal_save_core);
-  (void) signal(SIGEMT, signal_save_core);
+  /* (void) signal(SIGEMT, signal_save_core); */
   (void) signal(SIGFPE, signal_save_core);
   (void) signal(SIGKILL, signal_save_core);
   (void) signal(SIGBUS, signal_save_core);

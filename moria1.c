@@ -384,7 +384,7 @@ register int r1;
 }
 
 /* Remove item from equipment list		-RAK-	*/
-int remove(item_val)
+int remove_item(item_val)
 int item_val;
 {
   register int i, j, typ;
@@ -495,7 +495,7 @@ unwear()
 	      com_val = 0;
 	    }
 	  else
-	    (void) remove(j);
+	    (void) remove_item(j);
 	}
       if (scr_state == 0)
 	exit_flag = TRUE;
@@ -649,7 +649,7 @@ wear()
 		{
 		  inventory[INVEN_MAX] = unwear_obj;
 		  /* decrements equip_ctr, and calls py_bonuses with -1 */
-		  tmp = remove(INVEN_MAX);
+		  tmp = remove_item(INVEN_MAX);
 		  if (tmp < com_val)
 		    com_val = tmp;
 		}

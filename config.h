@@ -10,11 +10,16 @@
 
 /* files used by moria, set these to valid pathnames */
 /* if you change these, you only have to recompile death.c and files.c */
-#define MORIA_HOU  "/usrb/vopata/mm/Moria_hours"
-#define MORIA_MOR  "/usrb/vopata/mm/Moria_news"
-#define MORIA_MAS  "/usrb/vopata/mm/Character"
-#define MORIA_TOP  "/usrb/vopata/mm/Highscores"
-#define MORIA_HLP  "/usrb/vopata/mm/Helpfile"
+/* #define MORIA_HOU  "/usrb/vopata/mm/Moria_hours" */
+#define MORIA_HOU "Moria_hours"
+/* #define MORIA_MOR  "/usrb/vopata/mm/Moria_news" */
+#define MORIA_MOR "Moria_news"
+/* #define MORIA_MAS  "/usrb/vopata/mm/Character" */
+#define MORIA_MAS "Character"
+/* #define MORIA_TOP  "/usrb/vopata/mm/Highscores" */
+#define MORIA_TOP "Highscores"
+/* #define MORIA_HLP  "/usrb/vopata/mm/Helpfile" */
+#define MORIA_HLP "Helpfile"
 
 /* this sets the default user interface, ONE of the two must be defined */
 /* use the original key bindings, keypad for movement */
@@ -30,7 +35,7 @@
 /* #define ultrix */
 
 /* if you are compiling on a SYS V version of UNIX, define this */
-/* #define SYS_V */
+#define SYS_V
 
 /* if you are compiling on a SYS III version of UNIX, define this */
 /* #define SYS_III */
